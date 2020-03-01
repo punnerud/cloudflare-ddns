@@ -9,5 +9,5 @@ Example using crontab on Mac and Ubuntu, or Scheduler on Windows.
 
 Example for Mac/Ubuntu:
 ```
-*/ * * * * cd /folder/where/your/program/live/ && timeout 20 python3 update.py
+* * * * * cd /folder/where/your/program/live/ && timeout 20 python3 update.py
 ```
