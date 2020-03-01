@@ -3,10 +3,10 @@ response = requests.get('http://ifconfig.co/ip')
 filnavn = 'last-ip.txt'
 f = open(filnavn,'a+')
 f = open(filnavn,'r+')
-reip = re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$",response.text)[0]
+reip = re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$",response.text).group(0)
 try:
 	try:
-		ip = re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$",f.read())[0]
+		ip = re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$",f.read()).group(0)
 	except:
 		print("No IP in file, updating Cloudflare")
 		f.close()
