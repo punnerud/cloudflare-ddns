@@ -14,7 +14,7 @@ try:
 		f.write(reip)
 		f.close()
 		headers = {'Authorization': 'Bearer b-123123123','Content-Type': 'application/json'}
-		data = '{"type":"A","name":"anosms.com","content":"'+str(reip)+'","ttl":1,"proxied":false}'
+		data = '{"type":"A","name":"example.com","content":"'+str(reip)+'","ttl":1,"proxied":false}'
 		response = requests.put('https://api.cloudflare.com/client/v4/zones/123123123/dns_records/123123123', headers=headers, data=data)
 		exit()
 	if reip != ip:
@@ -24,7 +24,7 @@ try:
 		f.write(reip)
 		f.close()
 		headers = {'Authorization': 'Bearer b-123123123','Content-Type': 'application/json'}
-		data = '{"type":"A","name":"anosms.com","content":"'+str(reip)+'","ttl":1,"proxied":false}'
+		data = '{"type":"A","name":"example.com","content":"'+str(reip)+'","ttl":1,"proxied":false}'
 		response = requests.put('https://api.cloudflare.com/client/v4/zones/123123123/dns_records/123123123', headers=headers, data=data)
 		exit()
 	else:
