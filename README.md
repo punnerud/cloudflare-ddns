@@ -1,5 +1,5 @@
 # cloudflare-ddns
-Use Cloudflare as a DDNS with your own domain name, using Python.
+Cloudflare as a DDNS with your own domain name, using Python.
 
 Replace 123123123 and example.com in update.py with your credentials, zone-ID and record-ID.
 Example here for more information: https://api.cloudflare.com/#dns-records-for-a-zone-update-dns-record
